@@ -1,0 +1,3 @@
+di root gua punya folder | app, components, lib, prisma, public, types, .env, .auth.js, middleware.ts, 
+
+di app gua punya About, admin, api, checkout, contact, generated, reservation, room, signin
