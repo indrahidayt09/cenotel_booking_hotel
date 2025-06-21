@@ -12,8 +12,8 @@ declare global {
 }
 
 const PaymentButton = ({ reservation }: { reservation: reservationProps }) => {
+  const [isPending, startTransition] = useTransition();
   const handlePayment = async () => {
-    const [isPending, startTransition] = useTransition();
 
     startTransition(async () => {
       try {
@@ -37,7 +37,7 @@ const PaymentButton = ({ reservation }: { reservation: reservationProps }) => {
       onClick={handlePayment}
       className="px-10 py-4 mt-2 text-center font-semibold text-slate-200 bg-blue-500 rounded-sm hover:bg-blue-600 cursor-pointer"
     >
-      Pay Nows
+      {isPending ? "Processing" : "Process Payment"}
     </button>
   );
 };

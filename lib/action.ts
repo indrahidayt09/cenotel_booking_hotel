@@ -22,7 +22,7 @@ type FormState = {
 export const saveRoom = async (
   image: string,
   prevState: unknown,
-  formData: FormData
+  formData: FormData,
 ) => {
   try {
     if (!image) {

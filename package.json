@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@auth/prisma-adapter": "2.7.2",
@@ -15,25 +16,26 @@
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "midtrans-client": "^1.4.3",
-    "next": "15.3.3",
+    "next": "^15.3.4",
     "next-auth": "5.0.0-beta.28",
     "react": "^19.0.0",
     "react-datepicker": "^8.4.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-spinners": "^0.17.0",
+    "styled-jsx": "^5.1.7",
     "zod": "^3.25.51"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "^24.0.3",
+    "@types/react": "^19.1.8",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "prisma": "^6.8.2",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5.8.3"
   }
 }

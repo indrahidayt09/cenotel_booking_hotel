@@ -21,7 +21,7 @@ export const NavLinks = () => {
     <>
       {session?.user ? (
         <div className="flex items-center flex-row-reverse justify-end gap-5 order-1">
-          <div className="hidden p-1 bg-slate-300 text-sm overflow-hidde  rounded-full md:me-0 md:block  ">
+          <div className="hidden p-[2px] bg-white  text-sm overflow-hidde  rounded-full md:me-0 md:block  ">
             <Image
               src={session.user.image || "/images/avatar.svg"}
               alt="user avatar"
@@ -33,7 +33,7 @@ export const NavLinks = () => {
           <div className="flex items-center">
             <button
               onClick={() => signOut()}
-              className="hidden md:block hover:text-blue-500 text-slate-400 rounded-sm cursor-pointer"
+              className="hidden md:block hover:text-blue-500 text-slate-800 rounded-sm cursor-pointer"
             >
               Sign Out
             </button>
@@ -45,7 +45,7 @@ export const NavLinks = () => {
         onClick={handleClick}
         className={clsx(
           "inline-flex justify-center items-center text-sm p-2 hover:text-slate-700 md:hidden order-1",
-          isOpen ? "text-slate-700" : "text-slate-500"
+          isOpen ? "text-slate-700" : "text-slate-800"
         )}
       >
         {!isOpen ? (
@@ -61,13 +61,13 @@ export const NavLinks = () => {
           isOpen ? "right-3" : "-right-[100%]"
         )}
       >
-        <ul className="flex flex-col md:flex-row gap-6 md:gap-0 font-semibold text-sm uppercase p-4 mt-4 rounded-xs min-h-screen md:min-h-0 md:items-center md:space-x-10 md:p-0 md:mt-0 md:border-0 bg-slate-100 md:bg-transparent">
+        <ul className="flex flex-col md:flex-row gap-3 md:gap-0 p-4 mt-4 rounded-xs min-h-screen md:min-h-0 md:items-center md:space-x-10 md:p-0 md:mt-0 md:border-0 bg-slate-100 md:bg-transparent text-base">
           <li>
             <Link
               href="/"
               className={clsx(
                 "block py-2 rounded-sm md:p-0",
-                pathname === "/" ? "text-blue-500" : "text-slate-700",
+                pathname === "/" ? "text-blue-500" : "text-slate-800",
                 "hover:text-blue-500"
               )}
             >
@@ -79,7 +79,7 @@ export const NavLinks = () => {
               href="/About"
               className={clsx(
                 "block py-2 rounded-sm md:p-0",
-                pathname === "/About" ? "text-blue-500" : "text-slate-700",
+                pathname === "/About" ? "text-blue-500" : "text-slate-800",
                 "hover:text-blue-500"
               )}
             >
@@ -91,7 +91,7 @@ export const NavLinks = () => {
               href="/room"
               className={clsx(
                 "block py-2 rounded-sm md:p-0",
-                pathname === "/room" ? "text-blue-500" : "text-slate-700",
+                pathname === "/room" ? "text-blue-500" : "text-slate-800",
                 "hover:text-blue-500"
               )}
             >
@@ -103,7 +103,7 @@ export const NavLinks = () => {
               href="/contact"
               className={clsx(
                 "block py-2 rounded-sm md:p-0",
-                pathname === "/contact" ? "text-blue-500" : "text-slate-700",
+                pathname === "/contact" ? "text-blue-500" : "text-slate-800",
                 "hover:text-blue-500"
               )}
             >
@@ -119,7 +119,7 @@ export const NavLinks = () => {
                     "block py-2 rounded-sm md:p-0",
                     pathname === "/reservation"
                       ? "text-blue-500"
-                      : "text-slate-700",
+                      : "text-slate-800",
                     "hover:text-blue-500"
                   )}
                 >
@@ -135,7 +135,7 @@ export const NavLinks = () => {
                         "block py-2 rounded-sm md:p-0",
                         pathname === "/admin/dasboard"
                           ? "text-blue-500"
-                          : "text-slate-700",
+                          : "text-slate-800",
                         "hover:text-blue-500"
                       )}
                     >
@@ -149,7 +149,7 @@ export const NavLinks = () => {
                         "block py-2 rounded-sm md:p-0",
                         pathname === "/admin/room"
                           ? "text-blue-500"
-                          : "text-slate-700",
+                          : "text-slate-800",
                         "hover:text-blue-500"
                       )}
                     >
@@ -165,7 +165,7 @@ export const NavLinks = () => {
             <li className="pt-2 md:pt-0">
               <button
                 onClick={() => signOut()}
-                className=" md:hidden py-2 px-5 bg-blue-500 hover:bg-blue-600 rounded-xs text-slate-100 text-1xl"
+                className=" md:hidden py-2 px-5 bg-blue-500 hover:bg-blue-600 rounded-xs text-white text-1xl"
               >
                 SIGN OUT
               </button>
@@ -174,7 +174,7 @@ export const NavLinks = () => {
             <li className="pt-2 md:pt-0">
               <Link
                 href="/signin"
-                className="py-2 px-5 bg-blue-500 hover:bg-blue-400 rounded-xs text-slate-100 text-1xl"
+                className="py-2 px-5 bg-blue-500 hover:bg-blue-400 rounded-xs text-white text-1xl"
               >
                 Sign In
               </Link>

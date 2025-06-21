@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="fixed inset-x-0 top-0 p-2 py-3 bg-slate-50 shadow-sm z-10">
-      <div className="flex justify-between items-center px-3 md:px-5">
+    <div className="fixed inset-x-0 top-0 px-2 py-3 z-1000 bg-white shadow-sm">
+      <div className="flex justify-between items-center px-3 ">
         <Link href="/">
           <Image
             src="/images/logo.png"
-            width={120}
-            height={120}
+            width={110}
+            height={110}
             alt="Hotel logo"
             priority
           />

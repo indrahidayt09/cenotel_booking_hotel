@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/navbar";
 import { Footer } from "@/components/Navbar/footer";
 import { SessionProvider } from "next-auth/react";
 import { auth } from "@/auth";
 
-const raleway = Raleway({
-  variable: "--font-raleway",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
@@ -21,14 +21,13 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  const session =  await auth()
+  const session = await auth();
   return (
     <html lang="en">
-      <body className={`${raleway.variable} antialiased`}>
+      <body className={`${outfit.variable} antialiased`}>
         <SessionProvider session={session}>
           <Navbar />
-          <main className="bg-slate-200 min-h-screen">{children}</main>
+          <main className="bg-white min-h-screen">{children}</main>
           <Footer />
         </SessionProvider>
       </body>
