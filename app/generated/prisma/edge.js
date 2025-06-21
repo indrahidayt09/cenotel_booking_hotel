@@ -217,7 +217,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\indra\\OneDrive\\Desktop\\HOTEL BOOKING\\hotel_booking\\app\\generated\\prisma",
+      "value": "C:\\Users\\indra\\OneDrive\\Desktop\\HOTEL-BOOKING\\hotel-booking\\app\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -231,7 +231,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\indra\\OneDrive\\Desktop\\HOTEL BOOKING\\hotel_booking\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\indra\\OneDrive\\Desktop\\HOTEL-BOOKING\\hotel-booking\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
